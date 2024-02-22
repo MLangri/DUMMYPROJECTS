@@ -3,43 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CV</title>
+  <title>Mary Debra Langri - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
     header {
       background-color: #333;
       color: white;
-      padding: 10px;
+      padding: 20px 0;
       text-align: center;
     }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
     nav {
-      background-color: #f4f4f4;
-      padding: 10px;
+      background-color: #444;
+      padding: 10px 0;
+      text-align: center;
     }
     nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
     nav ul li {
       display: inline;
       margin-right: 20px;
     }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
     article {
+      background-color: rgb(243, 240, 240);
       padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     h2 {
       color: #333;
     }
-    p {
-      color: #666;
-    }
-    img {
+    img.profile-photo {
       display: block;
       margin: 0 auto;
       max-width: 200px;
@@ -54,17 +70,29 @@
     a:hover {
       text-decoration: underline;
     }
+    .download-link {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .download-link:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Langri's Curriculum Vitae</h1>
+  <h1>Mary Debra Langri</h1>
 </header>
 
 <nav>
   <ul>
-    <li><a href="#personal">Personal Information</a></li>
+    <li><a href="#personal">About Me</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -73,13 +101,13 @@
 </nav>
 
 <article id="personal">
-  <h2>Personal Information</h2>
-  <img src="profilephoto.png" alt="Profile Photo">
+  <h2>About Me</h2>
+  <img src="profilephoto.png" alt="Profile Photo" class="profile-photo">
   <p>Name: Mary Debra Langri</p>
   <p>Date of Birth: August 27, 2002</p>
   <p>Address: P.O Box 7074-00100, Nairobi</p>
-  <p>Email: <a href="">debra.langri@strathmore.edu</a></p>
-  <p>Phone: <a href="">+254 790499637</a></p>
+  <p>Email: <a href="mailto:debra.langri@strathmore.edu">debra.langri@strathmore.edu</a></p>
+  <p>Phone: <a href="tel:+254790499637">+254 790499637</a></p>
 </article>
 
 <article id="education">
@@ -99,11 +127,11 @@
 
 <article id="experience">
   <h2>Experience</h2>
-  <p>Position: Admnistrative Assistant</p>
+  <p>Position: Administrative Assistant</p>
   <p>Company: Educational Path International Consultants</p>
   <p>Address: 51 Green Acre Close, Karen</p>
-  <p>Email: <a href="">joy.nyambeka@gmail.com</a></p>
-  <p>Phone: <a href="">+254 787818546</a></p>
+  <p>Email: <a href="mailto:joy.nyambeka@gmail.com">joy.nyambeka@gmail.com</a></p>
+  <p>Phone: <a href="tel:+254787818546">+254 787818546</a></p>
   
 </article>
 
@@ -117,9 +145,9 @@
 <article id="contact">
   <h2>Contact</h2>
   <p>Feel free to contact me for any inquiries or opportunities.</p>
-  <p>LinkedIn: <a href="">https://www.linkedin.com/in/mary-debra-langri/</a></p>
-  <p>Github: <a href="">https://github.com/MLangri/</a></p>
-  <p>Download Application/Cover Letter: <a href="Langri - Application Letter.pdf" download>Download my Application Letter</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/mary-debra-langri/">Mary Debra Langri</a></p>
+  <p>Github: <a href="https://github.com/MLangri/">MLangri</a></p>
+  <a href="Langri-Application-Letter.pdf" class="download-link" download>Download Application Letter</a>
 </article>
 
 </body>
