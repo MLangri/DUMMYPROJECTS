@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    .landing-page {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .landing-page h1 {
+      margin-bottom: 20px;
+    }
+    #loginHeader,
+    #signupHeader {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #591bbd;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #591bbd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="landing-page">
+  <h1>Welcome to Langri's Website!</h1>
+  <p>Click below to login or sign up:</p>
+  <button id="showLogin">Login</button>
+  <button id="showSignup">Sign Up</button>
+</div>
+
+<div id="loginContent" style="display: none;">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+<div id="signupContent" style="display: none;">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <input type="text" id="signupUsername" placeholder="Username" required>
+    <input type="password" id="signupPassword" placeholder="Password" required>
+    <input type="submit" value="Sign Up">
+  </form>
+</div>
+
+<script>
+  // Function to show login form and hide signup form
+  function showLoginForm() {
+    document.getElementById("loginContent").style.display = "block";
+    document.getElementById("signupContent").style.display = "none";
+  }
+
+  // Function to show signup form and hide login form
+  function showSignupForm() {
+    document.getElementById("signupContent").style.display = "block";
+    document.getElementById("loginContent").style.display = "none";
+  }
+
+  // Event listeners for login/signup buttons
+  document.getElementById("showLogin").addEventListener("click", showLoginForm);
+  document.getElementById("showSignup").addEventListener("click", showSignupForm);
+
+  // Event listeners for login/signup forms
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("loginUsername").value;
+    var password = document.getElementById("loginPassword").value;
+    // Here you would typically send a request to your backend to authenticate the user
+    console.log("Login clicked with username: " + username + " and password: " + password);
+  });
+
+  document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("signupUsername").value;
+    var password = document.getElementById("signupPassword").value;
+    // Here you would typically send a request to your backend to create a new user
+    console.log("Sign Up clicked with username: " + username + " and password: " + password);
+  });
+</script>
+
+</body>
+</html>
