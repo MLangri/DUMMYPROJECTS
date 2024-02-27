@@ -36,11 +36,45 @@
     h2 {
       color: #b5c149;
     }
+    #about.sgbv-photo /* Ensures the pic is only in the about div */ {
+      display: block;
+      margin:auto;
+      max-width: 200px;
+      height:fit-content;
+      position: absolute;
+      bottom:auto;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */ 
+    }
+    #home.sgbv2-photo /* Ensures the pic is only in the home div */ {
+      display: block;
+      margin:auto;
+      max-width: 2000px;
+      height:fit-content;
+      position: absolute;
+      bottom:auto;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */ 
+    }
     h3{
         color: #d26f42;
     }
     p {
       color: #070707;
+    }
+    .swipe-container {
+      overflow-x: hidden;
+      white-space: nowrap;
+      display: flex;
+    }
+    .swipe-item {
+      flex: 0 0 auto;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: hidden; /* Hide overflowing content */
+      white-space: normal;  /* Allow text to wrap onto the next line */
+      text-overflow: clip;
     }
   </style>
 </head>
@@ -55,87 +89,109 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#articles">Articles</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<article id="home">
+<div class="swipe-container">
+    <div class="swipe-item" id="home">
   <h2>Home</h2>
   <p>Welcome to my website! .</p>
-</article>
+  <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\images\sgbv.png" alt="SGBV Photo" class="sgbv2-photo">
+</div>
 
-<article id="about">
+<div class="swipe-item" id="about">
   <h2>About Me</h2>
   <p>I am going to talk about SGBV (Sexual and Gender Based Violence).</p>
   <p> Sexual and gender-based violence (SGBV) is violence committed against a person because of his or her sex or gender. It is forcing another person to do something against his or her will through violence, coercion, threats, deception, cultural expectations, or economic means. Although the majority of victims and survivors of SGBV are girls and women, boys and men can also be harmed by SGBV. </p>
-</article>
+  <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\images\sgbv 2.png" alt="SGBV Photo" class="sgbv-photo">
+</div>
 
-<article id="articles">
+<div class="swipe-item" id="articles">
   <h2>Articles</h2>
   <div>
     <h3>Types of SGBV</h3>
-    <p>
-        <br>1. Sexual Abuse/Harassment
-        <br>2. Child Abuse
-        <br>3. Domestic Violence
-        <br>4. Female Genital Mutilation (FGM)
-        <br>5. Psychological Abuse
+    <p><ol>
+        <li>Sexual Abuse/Harassment</li>
+        <li>Child Abuse</li>
+        <li>Domestic Violence</li>
+        <li>Female Genital Mutilation (FGM)</li>
+        <li>Psychological Abuse</li>
+    </ol>
     </p>
   </div>
   <div>
     <h3>1. Sexual Abuse/Harassment</h3>
     <p>Sexual abuse is a form of sexual violence, which includes sexual assault, such as rape or unwanted touching, and sexual harassment, which is unwelcome, intimidating or offensive sexual behavior.</p>
-        <br>Examples of sexual violence:
-        <br>-Being spoken to in a sexual way that you find offensive or degrading
-        <br>-Repeated unwanted sexual attention or advances, including in your workplace or by your employer
-        <br>-Being used sexually while you were very drunk, drugged, unconscious, or unable to say NO
-        <br>-Sexual photos or videos being posted online without your consent
-        <br>-Being forced or coerced to have sex without protection from sexually transmitted diseases
-        <br>-Sexual abuse or assault from someone in your family (incest)
-        <br>-Being coerced, threatened or forced to perform any sort of sexual activity
-        <br>-Being kissed or touched without your consent or being made, by coercion or force, to touch or kiss someone
+    <p>
+        <ul>
+            <br>Examples of sexual violence:
+        <li>Being spoken to in a sexual way that you find offensive or degrading</li>
+        <li>Repeated unwanted sexual attention or advances, including in your workplace or by your employer</li>
+        <li>Being used sexually while you were very drunk, drugged, unconscious, or unable to say NO</li>
+        <li>Sexual photos or videos being posted online without your consent</li>
+        <li>Being forced or coerced to have sex without protection from sexually transmitted diseases</li>
+        <li>Sexual abuse or assault from someone in your family (incest)</li>
+        <li>Being coerced, threatened or forced to perform any sort of sexual activity</li>
+        <li>Being kissed or touched without your consent or being made, by coercion or force, to touch or kiss someone</li>
+        </ul>
     </p>
   </div>
   <div>
     <h3>2. Child Abuse/Neglect</h3>
-    <p>Any recent act or failure to act on the part of a parent or caretaker which results in death, serious physical or emotional harm, sexual abuse or exploitation</p>
-    <p>An act or failure to act which presents an imminent risk of serious harm</p>
+    <p>
+        <ol>
+        <li>Recent act or failure to act on the part of a parent or caretaker which results in death, serious physical or emotional harm, sexual abuse or exploitation</li>
+        <li>An act or failure to act which presents an imminent risk of serious harm</li>
+    </ol></p>
+    
     <h4>Symptoms</h4>
     <p>A child who's being abused may feel guilty, ashamed or confused. The child may be afraid to tell anyone about the abuse, especially if the abuser is a parent, other relative or family friend. That's why it's vital to watch for red flags, such as:</p>
-    <p><br> *Withdrawal from friends or usual activities
-    <br>*Changes in behavior such as aggression, anger, hostility or hyperactivity or changes in school performance
-    <br>*Depression, anxiety or unusual fears, or a sudden loss of self-confidence
-    <br>*Sleep problems and nightmares
-    <br>*An apparent lack of supervision
-    <br>*Frequent absences from school
-    <br>*Rebellious or defiant behavior
-    <br>*Self-harm or attempts at suicide
+    <p><ul>
+        <li>Withdrawal from friends or usual activities</li>
+    <li>Changes in behavior such as aggression, anger, hostility or hyperactivity or changes in school performance</li>
+    <li>Depression, anxiety or unusual fears, or a sudden loss of self-confidence</li>
+    <li>Sleep problems and nightmares</li>
+    <li>An apparent lack of supervision</li>
+    <li>Frequent absences from school</li>
+    <li>Rebellious or defiant behavior</li>
+    <li>Self-harm or attempts at suicide</li>
+    </ul>
     </p>
     <p>Specific signs and symptoms depend on the type of abuse and can vary. Keep in mind that warning signs are just that-warning signs. The presence of warning signs doesn't necessarily mean that a child is being abused.</p>
+    
     <h4>Physical abuse signs and symptoms</h4>
-<p>
-    <br>*Unexplained injuries, such as bruises, broken bones (fractures) or burns
-    <br>*Injuries that don't match the given explanation
-    <br>*Injuries that aren't compatible with the child's developmental ability
+<p><ul>
+    <li>Unexplained injuries, such as bruises, broken bones (fractures) or burns</li>
+    <li>Injuries that don't match the given explanation</li>
+    <li>Injuries that aren't compatible with the child's developmental ability</li>
+</ul>
 </p>
+
 <h4>Sexual abuse signs and symptoms</h4>
-<p>
-    <br>*Sexual behavior or knowledge that's inappropriate for the child's age
-    <br>*Pregnancy or a sexually transmitted infection
-    <br>*Genital or anal pain, bleeding, or injury
-    <br>*Statements by the child that he or she was sexually abused
-    <br>*Inappropriate sexual behavior with other children
+<p><ul>
+    <li>Sexual behavior or knowledge that's inappropriate for the child's age</li>
+    <li>Pregnancy or a sexually transmitted infection</li>
+    <li>Genital or anal pain, bleeding, or injury</li>
+    <li>Statements by the child that he or she was sexually abused</li>
+    <li>Inappropriate sexual behavior with other children</li>
+</ul>
 </p>
+
 <h4>Emotional abuse signs and symptoms</h4>
 <p>
-    <br>*Delayed or inappropriate emotional development
-    <br>*Loss of self-confidence or self-esteem
-    <br>*Social withdrawal or a loss of interest or enthusiasm
-    <br>*Depression
-    <br>*Avoidance of certain situations, such as refusing to go to school or ride the bus
-    <br>*Appears to desperately seek affection
-    <br>*A decrease in school performance or loss of interest in school
-    <br>*Loss of previously acquired developmental skills
+    <ul>
+        <li>Delayed or inappropriate emotional development</li>
+    <li>Loss of self-confidence or self-esteem</li>
+    <li>Social withdrawal or a loss of interest or enthusiasm</li>
+    <li>Depression</li>
+    <li>Avoidance of certain situations, such as refusing to go to school or ride the bus</li>
+    <li>Appears to desperately seek affection</li>
+    <li>A decrease in school performance or loss of interest in school</li>
+    <li>Loss of previously acquired developmental skills</li>
+</ul>
 </p>
+
 <h4>Neglect signs and symptoms</h4>
 <p>
     <ul>
@@ -148,6 +204,7 @@
     <li>Lack of appropriate attention for medical, dental or psychological problems or lack of necessary follow-up care</li>
     </ul>
 </p>
+
 <h4>Warning signs include a parent who:</h4>
 <p>
     <ul>
@@ -164,33 +221,94 @@
     </ul>
     
 </p>
-
-
-
-
-
-
   </div>
   <div>
     <h3>3. Domestic Violence</h3>
-    <p></p>
+    <p><b>What Is Domestic Abuse?</b>
+      <ul>
+        <li>Domestic abuse, also called "domestic violence" or "intimate partner violence", can be defined as a pattern of behavior in any relationship that is used to gain or maintain power and control over an intimate partner.</li>
+        <li>Abuse is physical, sexual, emotional, economic or psychological actions or threats of actions that influence another person. This includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or wound someone.</li>
+        <li>Domestic abuse can happen to anyone of any race, age, sexual orientation, religion, or gender.</li>
+        <li>It can occur within a range of relationships including couples who are married, living together or dating.</li>
+        <li>Domestic violence affects people of all socioeconomic backgrounds and education levels.</li>
+        <li>Anyone can be a victim of domestic violence, regardless of age, race, gender, sexual orientation, faith or class</li>
+        <li>Victims of domestic abuse may also include a child or other relative, or any other household member.</li>
+        <li>Domestic abuse is typically manifested as a pattern of abusive behavior toward an intimate partner in a dating or family relationship, where the abuser exerts power and control over the victim.</li>
+        <li>Domestic abuse can be mental, physical, economic or sexual in nature. Incidents are rarely isolated, and usually escalate in frequency and severity. Domestic abuse may culminate in serious physical injury or death.</li>
+      </ul>
+    </p>
+    <p><b>Recognizing the signs of domestic abuse</b>
+      <br><b>Does your partner...</b>
+      <ul>
+        <li>Embarrass or make fun of you in front of your friends or family?</li>
+        <li>Put down your accomplishments?</li>
+        <li>Make you feel like you are unable to make decisions?</li>
+        <li>Use intimidation or threats to gain compliance?</li>
+        <li>Tell you that you are nothing without them?</li>
+        <li>Treat you roughly—grab, push, pinch, shove or hit you?</li>
+        <li>Call you several times a night or show up to make sure you are where you said you would be?</li>
+        <li>Use drugs or alcohol as an excuse for saying hurtful things or abusing you?</li>
+        <li>Blame you for how they feel or act?</li>
+        <li>Pressure you sexually for things you aren’t ready for?</li>
+        <li>Make you feel like there is “no way out” of the relationship?</li>
+        <li>Prevent you from doing things you want – like spending time with friends or family?</li>
+        <li>Try to keep you from leaving after a fight or leave you somewhere after a fight to “teach you a lesson”?</li>
+        <br>
+        <br><b>Do you...</b>
+        <li>Sometimes feel scared of how your partner may behave?</li>
+        <li>Constantly make excuses to other people for your partner’s behaviour?</li>
+        <li>Believe that you can help your partner change if only you changed something about yourself?</li>
+        <li>Try not to do anything that would cause conflict or make your partner angry?</li>
+        <li>Always do what your partner wants you to do instead of what you want?</li>
+        <li>Stay with your partner because you are afraid of what your partner would do if you broke up?</li>
+      </ul>
+    </p>
+    <p>If any of these things are happening in your relationship, talk to someone. Without help, the abuse will continue. Making that first call to seek help is a courageous step.
+      <br><b><i>Always remember, NO ONE deserves to be abused. The abuse is not your fault. You are not alone.</i></b>
+    </p>
   </div>
   <div>
     <h3>4. Female Genital Mutilation (FGM)</h3>
-    <p></p>
+    <p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </p>
   </div>
   <div>
     <h3>5. Psychological Abuse</h3>
-    <p></p>
+    <p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </p>
   </div>
-</article>
-<article id="contact">
+</div>
+
+<div class="swipe-item" id="contact">
     <h2>Contact</h2>
     <p>SGBV Organizations and their contacts</p>
     <h3>Healthcare Assistance Kenya</h3>
     <p>Healthcare Assistance Kenya (HAK) is a humanitarian Non-Governmental Organization that operates the only and the first-ever Sexual and Gender-Based Violence Rapid Response System and Helpline 1195 that today supports survivors of GBV from grassroots to break the silence and quickly access GBV services through helpline 1195 after a violation. 
-
-        The main aim of this project is to help survivors access quick GBV services on referral through a confidential SMS system for timely prevention and treatment of infections such as HIV.
+      <br>The main aim of this project is to help survivors access quick GBV services on referral through a confidential SMS system for timely prevention and treatment of infections such as HIV.
     </p>
     <p>Helpline: <a href="">1195</a></p>
     <p>Website: <a href="https://hakgbv1195.org/">Healthcare Assistance Kenya</a></p>
@@ -243,8 +361,60 @@
     <h3>Family Health International (FHI)</h3>
     <p>Are you going through isolation, anxiety, loss, or stress? Do you know anyone going through anxiety and stress? Family health Isolation (FHI360) has a hotline dedicated to helping people going through stress issues.</p>
     <p>Website: <a href="https://www.fhi360.org/">Family Health International (FHI)</a></p>
-
-  </article>
-
+</div>
+<script>
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let previousTranslate = 0;
+    let animationID = 0;
+    let currentIndex = 0;
+  
+    const swipeContainer = document.querySelector('.swipe-container');
+    const swipeItems = document.querySelectorAll('.swipe-item');
+  
+    function onTouchStart(event) {
+      isDragging = true;
+      startPosition = event.touches[0].clientX;
+      animationID = requestAnimationFrame(animation);
+      swipeContainer.style.cursor = 'grabbing';
+    }
+  
+    function onTouchMove(event) {
+      if (isDragging) {
+        const currentPosition = event.touches[0].clientX;
+        currentTranslate = previousTranslate + currentPosition - startPosition;
+      }
+    }
+  
+    function onTouchEnd() {
+      isDragging = false;
+      cancelAnimationFrame(animationID);
+      const threshold = 100;
+      if (Math.abs(currentTranslate - previousTranslate) > threshold) {
+        if (currentTranslate < previousTranslate && currentIndex < swipeItems.length - 1) {
+          currentIndex++;
+        } else if (currentTranslate > previousTranslate && currentIndex > 0) {
+          currentIndex--;
+        }
+      }
+      setSlidePosition();
+      swipeContainer.style.cursor = 'grab';
+    }
+  
+    function animation() {
+      setSlidePosition();
+      if (isDragging) requestAnimationFrame(animation);
+    }
+  
+    function setSlidePosition() {
+      swipeContainer.style.transform = `translateX(${currentTranslate}px)`;
+      previousTranslate = currentTranslate;
+    }
+  
+    swipeContainer.addEventListener('touchstart', onTouchStart);
+    swipeContainer.addEventListener('touchmove', onTouchMove);
+    swipeContainer.addEventListener('touchend', onTouchEnd);
+  </script>
 </body>
 </html>
