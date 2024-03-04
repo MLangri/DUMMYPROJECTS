@@ -47,24 +47,65 @@
     h2 {
       color: #b5c149;
     }
-    #about.sgbv-photo /* Ensures the pic is only in the about div */ {
+    #header.coverphoto /* Ensures the pic is only in the about div */ {
       margin:auto;
       width: 100%;
       height:auto;
       position: absolute;
+      overflow: auto;
       bottom:0;
       left: 50%; /* Center the image horizontally */
       transform: translateX(-50%); /* Center the image horizontally */ 
     }
-    #home.sgbv2-photo /* Ensures the pic is only in the home div */ {
-      display: block;
-      margin:auto;
-      max-width: 800px;
-      height:fit-content;
+    #ministries.ministriesphoto /* Ensures the pic is only in the home div */ {
+        margin:auto;
+      width: 100%;
+      height:auto;
       position: absolute;
-      bottom:auto;
+      overflow: auto;
+      bottom:0;
       left: 50%; /* Center the image horizontally */
-      transform: translateX(-50%); /* Center the image horizontally */ 
+      transform: translateX(-50%); /* Center the image horizontally */  
+    }
+    #adventurers.adventurerlogo /* Ensures the pic is only in the home div */ {
+        margin:auto;
+      width: 100%;
+      height:auto;
+      position: absolute;
+      overflow: auto;
+      bottom:0;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */  
+    }
+    #pathfinders.pathfinderlogo /* Ensures the pic is only in the home div */ {
+        margin:auto;
+      width: 100%;
+      height:auto;
+      position: absolute;
+      overflow: auto;
+      bottom:0;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */  
+    }
+    #ambasssadors.ambassadorslogo /* Ensures the pic is only in the home div */ {
+        margin:auto;
+      width: 100%;
+      height:auto;
+      position: absolute;
+      overflow: auto;
+      bottom:0;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */  
+    }
+    #youth.youthlogo /* Ensures the pic is only in the home div */ {
+        margin:auto;
+      width: 100%;
+      height:auto;
+      position: absolute;
+      overflow: auto;
+      bottom:0;
+      left: 50%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Center the image horizontally */  
     }
     h3{
         color: #d26f42;
@@ -91,6 +132,7 @@
 <body>
 <header>
   <h1>Welcome MOSDA AY CLUB</h1>
+  <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\IMG-20220806-WA0029.jpg" alt="coverphoto" class="coverphoto">
 </header>
 <nav>
   <ul>
@@ -99,18 +141,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-<div class="swipe-container">
-    <div class="swipe-item" id="home">
-  <h2>Home</h2>
-  <p>Welcome to the Mount Olives Adventist Youth Website! .</p>
-  <br><p><b>Objective</b></p>
-  <ol>
-    <li><p>To save from sin and guide into service. The enemy will not prevail against youth who are actively engaged in the things of God.</p></li>
-    <li><p>“He [Satan] well knows that there is no other class that can do as much good as young men and young women who are consecrated to God.  The youth, if right, could sway a mighty influence.  Preachers or laymen advanced in years, cannot have one-half the influence upon the young that the youth, devoted to God, can have upon their associates” (Messages to Young People, p. 204).</p></li>
-    <li><p>“Young men and women, God calls upon you to work, work for Him… You can do a work that those who minister in word and doctrine cannot do.  You can reach a class whom the minister cannot affect” (Messages to Young People, p. 207).</p></li>
-  </ol>
-  <img src="" alt="" class="">
-</div>
 
 <div class="dropdown" id="dropdown">
     <button class="dropbtn">Menu</button>
@@ -122,6 +152,21 @@
       <a href="#media">Media</a>
     </div>
 </div>
+
+<div class="swipe-container">
+    <div class="swipe-item" id="home">
+  <h2>Home</h2>
+  <p>Welcome to the Mount Olives Adventist Youth Website! .</p>
+  <br><p><b>Objective</b></p>
+  <ol>
+    <li><p>To save from sin and guide into service. The enemy will not prevail against youth who are actively engaged in the things of God.</p></li>
+    <li><p>“He [Satan] well knows that there is no other class that can do as much good as young men and young women who are consecrated to God.  The youth, if right, could sway a mighty influence.  Preachers or laymen advanced in years, cannot have one-half the influence upon the young that the youth, devoted to God, can have upon their associates” (Messages to Young People, p. 204).</p></li>
+    <li><p>“Young men and women, God calls upon you to work, work for Him… You can do a work that those who minister in word and doctrine cannot do.  You can reach a class whom the minister cannot affect” (Messages to Young People, p. 207).</p></li>
+  </ol>
+  
+</div>
+
+
 
 <div class="swipe-item" id="bulletin">
   <h2>Bulletins</h2>
@@ -181,68 +226,80 @@
 
 <div class="swipe-item" id="ministries">
     <h2>Ministries</h2>
-
+    <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\ay ministries.png" alt="Ministries Photo" class="ministriesphoto">
         <div class="dropdown" id="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
               <a href="#adventurers">Adventurer Club Link </a>
               <a href="#pathfinders">Pathfinder Club Link </a>
               <a href="#ambassadors">Ambassadors Club Link </a>
-              <a href="#junioryouth">Junior Youth Link </a>
+              <a href="#youth">Junior Youth Link </a>
               <a href="#senioryouth">Senior Youth Link </a>
             </div>
         </div>
+
+        <div class="swipe-item" id="adventurers">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\Adventurer_Logo-900x802.png.webp" alt="Adventurers Logo" class="adventurerlogo">
+            <h2>Adventurers</h2>
+            <br><p>The Adventurer Club is a Seventh-day Adventist Church-sponsored ministry open to all families of children in grades pre-kindergarten(kids ages 4-9).</p>
+            <br><p>Classes</p>
+            <br><p>Song</p>
+            <br><p>Awards</p>
+            <br><p>Plege and Law</p>
+            <br><p>Uniform</p>
+        </div>
+        
+        <div class="swipe-item" id="pathfinders">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\Pathfinder_logo.jpeg.webp" alt="Pathfinders Logo" class="pathfinderlogo">
+            <h2>Pathfinder Club</h2>
+            <br><p>Enlarging their windows to the world and building a relationship with God are the dual objectives of this club designed for children ages 10-15.</p>
+            <br><p>Classes</p>
+            <br><p>Song</p>
+            <br><p>Awards</p>
+            <br><p>Plege and Law</p>
+            <br><p>Uniform</p>
+        </div>
+        
+        <div class="swipe-item" id="ambassadors">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\ambassadors.png" alt="Ambassadors Logo" class="ambassadorslogo">
+            <h2>Ambassadors Club</h2>
+            <br><p>The Ambassador Club is not intended as a replacement of, but instead, will strengthen the current Senior Youth/ Young Adult Ministry of our Church. For ages 16-21.</p>
+            <br><p>Classes</p>
+            <br><p>Song</p>
+            <br><p>Awards</p>
+            <br><p>Plege and Law</p>
+            <br><p>Uniform</p>
+        </div>
+        
+        <div class="swipe-item" id="youth">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\youth.jpg" alt="Youth" class="youthlogo">
+            <h2>Adventist Youth</h2>
+            <br><p>The story of the Adventist Youth Society began over 125 years ago along a dusty country lane in Michigan with two young boys kneeling in prayer and today serves ages 21-30.</p>
+        </div>
+        
+        <div class="swipe-item" id="senioryouth">
+            <h2>Senior Youth</h2>
+        </div>
+        
 </div>
 
-<div class="swipe-item" id="adventurers">
-    <h2>Adventurers</h2>
-    <br><p>Classes</p>
-    <br><p>Song</p>
-    <br><p>Awards</p>
-    <br><p>Plege and Law</p>
-    <br><p>Uniform</p>
-</div>
 
-<div class="swipe-item" id="pathfinders">
-    <h2>Pathfinder Club</h2>
-    <br><p>Classes</p>
-    <br><p>Song</p>
-    <br><p>Awards</p>
-    <br><p>Plege and Law</p>
-    <br><p>Uniform</p>
-</div>
-
-<div class="swipe-item" id="ambassadors">
-    <h2>Ambassadors Club</h2>
-    <br><p>Classes</p>
-    <br><p>Song</p>
-    <br><p>Awards</p>
-    <br><p>Plege and Law</p>
-    <br><p>Uniform</p>
-</div>
-
-<div class="swipe-item" id="junioryouth">
-    <h2>Junior Youth</h2>
-</div>
-
-<div class="swipe-item" id="senioryouth">
-    <h2>Senior Youth</h2>
-</div>
 
 <div class="swipe-item" id="media">
     <h2>Media</h2>
 
     <div class="slideshow-container">
+        <h2>Hike at Mt. Longonot</h2>
         <div class="slide fade">
-          <img src="" alt="Slide 1">
+          <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\IMG-20230219-WA0006.jpg" alt="Slide 1">
         </div>
         
         <div class="slide fade">
-          <img src="" alt="Slide 2">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\IMG-20230219-WA0099.jpg" alt="Slide 2">
         </div>
         
         <div class="slide fade">
-          <img src="" alt="Slide 3">
+            <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\IMG-20230219-WA0052.jpg" alt="Slide 3">
         </div>
       
         <div class="slide fade">
