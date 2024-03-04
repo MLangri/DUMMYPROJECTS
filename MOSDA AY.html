@@ -47,6 +47,9 @@
     h2 {
       color: #b5c149;
     }
+    .image-container img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */}
     #header.coverphoto /* Ensures the pic is only in the about div */ {
       margin:auto;
       width: 100%;
@@ -69,8 +72,8 @@
     }
     #adventurers.adventurerlogo /* Ensures the pic is only in the home div */ {
         margin:auto;
-      width: 100%;
-      height:auto;
+      width: 200px;
+      height:200px;
       position: absolute;
       overflow: auto;
       bottom:0;
@@ -79,8 +82,8 @@
     }
     #pathfinders.pathfinderlogo /* Ensures the pic is only in the home div */ {
         margin:auto;
-      width: 100%;
-      height:auto;
+      width: 200px;
+      height:200px;
       position: absolute;
       overflow: auto;
       bottom:0;
@@ -89,8 +92,8 @@
     }
     #ambasssadors.ambassadorslogo /* Ensures the pic is only in the home div */ {
         margin:auto;
-      width: 100%;
-      height:auto;
+      width: 200px;
+      height:200px;
       position: absolute;
       overflow: auto;
       bottom:0;
@@ -99,8 +102,8 @@
     }
     #youth.youthlogo /* Ensures the pic is only in the home div */ {
         margin:auto;
-      width: 100%;
-      height:auto;
+      width: 200px;
+      height:200px;
       position: absolute;
       overflow: auto;
       bottom:0;
@@ -147,7 +150,6 @@
     <div class="dropdown-content">
       <a href="#bulletins">Bulletins</a>
       <a href="#events">Events</a>
-      <a href="#membership">Membership</a>
       <a href="#ministries">Ministries</a>
       <a href="#media">Media</a>
     </div>
@@ -217,12 +219,6 @@
   <h2>Events</h2>
 </div>
 
-<div class="swipe-item" id="membership">
-    <h2>Membership</h2>
-    <br><p>Get Membership</p>
-    <br><p>Renew Membership</p>
-    <br><p>Confirm Membership</p>
-</div>
 
 <div class="swipe-item" id="ministries">
     <h2>Ministries</h2>
@@ -242,6 +238,7 @@
             <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\Adventurer_Logo-900x802.png.webp" alt="Adventurers Logo" class="adventurerlogo">
             <h2>Adventurers</h2>
             <br><p>The Adventurer Club is a Seventh-day Adventist Church-sponsored ministry open to all families of children in grades pre-kindergarten(kids ages 4-9).</p>
+            <br><p><a href="https://forms.gle/7tYG4HKQfPC8wPNQ7">Adventurer Registration form</a></p>
             <br><p>Classes</p>
             <br><p>Song</p>
             <br><p>Awards</p>
@@ -252,6 +249,7 @@
         <div class="swipe-item" id="pathfinders">
             <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\Pathfinder_logo.jpeg.webp" alt="Pathfinders Logo" class="pathfinderlogo">
             <h2>Pathfinder Club</h2>
+            <br><p><a href="https://forms.gle/oPmscu4jY9WVCF1H9">Pathfinder Registration form</a></p>
             <br><p>Enlarging their windows to the world and building a relationship with God are the dual objectives of this club designed for children ages 10-15.</p>
             <br><p>Classes</p>
             <br><p>Song</p>
@@ -264,6 +262,7 @@
             <img src="C:\Users\LANGRI\OneDrive\Desktop\NEW PROJECTS\MOSDA\IMAGES\ambassadors.png" alt="Ambassadors Logo" class="ambassadorslogo">
             <h2>Ambassadors Club</h2>
             <br><p>The Ambassador Club is not intended as a replacement of, but instead, will strengthen the current Senior Youth/ Young Adult Ministry of our Church. For ages 16-21.</p>
+            <br><p><a href="https://forms.gle/MfV31wrmt7SDM2FTA">Ambassador Registration form</a></p>
             <br><p>Classes</p>
             <br><p>Song</p>
             <br><p>Awards</p>
@@ -280,7 +279,7 @@
         <div class="swipe-item" id="senioryouth">
             <h2>Senior Youth</h2>
         </div>
-        
+
 </div>
 
 
@@ -330,6 +329,12 @@
 
 <div class="swipe-item" id="contact">
     <h2>Contact</h2>
+    <h3><b>Get In Touch</b></h3>
+    <p><p>Email:</p><a href="mailto:info@mountolivessda.org"> info@mountolivessda.org</a></p>
+    <p><p>Telephone:</p><a href="tel:0777 700073">0777 700073</a></p>
+    <p><a href=""></a></p>
+    <p><a href=""></a></p>
+    <p><a href=""></a></p>
 </div>
 <script>
     let isDragging = false;
