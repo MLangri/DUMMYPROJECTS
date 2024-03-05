@@ -1,8 +1,163 @@
+/*CSS for the mosda website*/
+footer {
+  background-color:maroon;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed; /* Fixed positioning at the bottom of the viewport */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+article {
+  padding: 20px;
+}
+h2 {
+  color: maroon;
+}
+#header.coverphoto /* Ensures the pic is only in the about div */ {
+  margin:auto;
+  width: 100%;
+  height:fit-content;
+  position: absolute;
+  overflow:hidden;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */ 
+}
+.img {
+max-width:100%; /* Adjust the width as needed */
+height: auto;}
+#ministries.ministriesphoto /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 100%;
+  height:auto;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */  
+}
+#adventurers.adventurerlogo /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 200px;
+  height:200px;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */  
+}
+#pathfinders.pathfinderlogo /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 200px;
+  height:200px;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */  
+}
+#ambasssadors.ambassadorslogo /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 200px;
+  height:200px;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */  
+}
+#youth.youthlogo /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 200px;
+  height:200px;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */  
+}
+#adventurers.adventureruniform /* Ensures the pic is only in the home div */ {
+    margin:auto;
+  width: 200px;
+  height:200px;
+  position: absolute;
+  overflow: auto;
+  bottom:0;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */
+}
+h3{
+    color: #d26f42;
+}
+p {
+  color: #070707;
+}
+.swipe-container {
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+.swipe-item {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: normal;  /* Allow text to wrap onto the next line */
+  text-overflow: clip;
+}
+body{
+/* Set background color */
+background-color: tan;/* Example color */
+/* Set background image */
+background-image: url(); /* Example image path */
+/* Set background repeat behavior */
+background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
+/* Set background position */
+background-position: center center; /* Options: left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom */
+/* Set background size */
+background-size: cover; /* Options: auto, length, percentage, cover, contain */
+}
 /* CSS for slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 25%;
+  height: 25%;
+  overflow: hidden;
   position: relative;
   margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
 }
 
 /* CSS for slides */
@@ -15,7 +170,7 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 100%;
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -86,3 +241,4 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
