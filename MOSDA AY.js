@@ -8,6 +8,7 @@ function plusSlides(n) {
 function showSlides() {
   let i;
   const slides = document.getElementsByClassName("slide");
+  var texts = document.getElementsByClassName("text");
   if (slideIndex >= slides.length) {slideIndex = 0}    
   if (slideIndex < 0) {slideIndex = slides.length - 1}
   for (i = 0; i < slides.length; i++) {
