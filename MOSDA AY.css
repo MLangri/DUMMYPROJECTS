@@ -10,9 +10,15 @@ footer {
   width: 100%; /* Full width */
 }
 body {
+  width: 100%;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+.container {
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding around the content */
 }
 header {
   background-color: white;
@@ -135,15 +141,31 @@ p {
 }
 body{
 /* Set background color */
-background-color: tan;/* Example color */
+background-color: whitesmoke;/* Example color */
 /* Set background image */
-background-image: url(); /* Example image path */
+background-image: url("ambassadors.png"); /* Example image path */
 /* Set background repeat behavior */
 background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
 /* Set background position */
 background-position: center center; /* Options: left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom */
 /* Set background size */
 background-size: cover; /* Options: auto, length, percentage, cover, contain */
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
 /* CSS for slideshow container */
 .slideshow-container {
